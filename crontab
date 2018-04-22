@@ -1,0 +1,1 @@
+52 * * * * sudo /home/pi/working/unifi-api/check-ip.sh
