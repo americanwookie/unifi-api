@@ -1,6 +1,6 @@
 FROM centos:7
 Maintainer Scott O'Neil <scott@cpanel.net>
-RUN yum -y update && yum -y install ca-certificates php curl git php-curl php-openssl php-json php-phar php-dom && yum clean all
+RUN yum -y update && yum -y install ca-certificates php curl git php-curl php-openssl php-json php-phar php-dom unzip && yum clean all
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer 
 
